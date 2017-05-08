@@ -28,6 +28,9 @@ AddEventHandler("gui:getItems", function(THEITEMS)
 end)
 
 AddEventHandler("player:receiveItem", function(item, quantity)
+        Citizen.Trace("on est rentré dans ASTOUUUU AHAHAH!!!")
+        Citizen.Trace(tostring(item))
+        Citizen.Trace(tostring(quantity))
     if (getPods() + quantity <= maxCapacity) then
         item = tonumber(item)
         if (ITEMS[item] == nil) then
