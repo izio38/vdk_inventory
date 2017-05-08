@@ -186,5 +186,6 @@ function getNearPlayer()
     end
     if (minDistance < 3) then
         return playerNear
+    else return 0
     end
 end
